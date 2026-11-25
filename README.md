@@ -2,8 +2,8 @@
 
 **Turn a game controller into a MIDI instrument.**  
 NexaKord is a Windows application by **Caleb France · Canexa Studios** that lets you use a game controller as a playable MIDI input, with chord-focused musical control and progression-oriented workflows.
-
-> Current documented release: **v3.1.1**  
+https://nexakord.freedev.app/
+> Current documented release: **v0.3.1.1**  
 > Project status: community testing and contributions welcome.
 
 ## The idea
