@@ -1,0 +1,129 @@
+NEXAKORD v3.1.1
+Turn your game controller into a MIDI instrument.
+Created by Caleb France | Canexa Studios
+
+WELCOME
+NexaKord lets you use a familiar game controller as a musical MIDI input. Its goal is to make playing chords and exploring progressions feel immediate, even if you do not own a MIDI keyboard. Connect a controller, teach NexaKord your button layout, and send MIDI into compatible music software.
+
+This is an evolving project. I want to make it better with the help of musicians, producers, testers, developers, and curious people who want to experiment.
+
+------------------------------------------------------------
+1. INSTALL / BUILD
+------------------------------------------------------------
+1. Extract the complete NexaKord ZIP. Do not run it from inside the ZIP.
+2. Keep all files together and preserve the folder structure.
+3. Double-click BUILD.bat.
+4. The build window explains each step. If successful, it creates NexaKord.exe in this folder, creates Desktop and Start menu shortcuts, and starts the program.
+5. No administrator rights are intended to be required.
+
+The build script checks the expected source files and helper scripts before compiling. If a build fails, read build-log.txt in this folder. The script is designed not to replace a working executable when compilation fails.
+
+------------------------------------------------------------
+2. SET UP MIDI
+------------------------------------------------------------
+NexaKord uses a virtual MIDI cable to pass MIDI from the application to a DAW.
+
+1. Open NexaKord.
+2. The first time, click "Get MIDI cable" and install the free loopMIDI application.
+3. Open loopMIDI, press +, and create a port named:
+   NexaKord
+4. Keep the virtual MIDI port running while you use NexaKord.
+
+------------------------------------------------------------
+3. CONNECT AND TEACH YOUR CONTROLLER
+------------------------------------------------------------
+1. Connect your game controller by USB or pair it over Bluetooth.
+2. Follow the controller setup pictures/instructions in NexaKord.
+3. Select your controller from the dropdown. If it is missing, use Scan.
+4. Press Test to check that the controller is registering.
+5. Press TEACH and follow the prompts to map the controls.
+
+Controller models and connection methods can behave differently. If something does not register, reconnect the controller, check the selected device, scan again, and repeat the Test step.
+
+------------------------------------------------------------
+4. USE IT WITH FL STUDIO
+------------------------------------------------------------
+1. Open FL Studio.
+2. Press F10 to open MIDI settings.
+3. Find the NexaKord loopMIDI port under Input.
+4. Select it and enable it.
+
+Other DAWs may offer a similar MIDI input configuration. Their exact setup steps will differ.
+
+------------------------------------------------------------
+5. QUICK KEYS
+------------------------------------------------------------
+T  - Switch between piano and guitar fretboard views.
+H  - Toggle HiChord on/off.
+
+Explore the application and experiment with the controls. The best way to understand an instrument is to play it.
+
+------------------------------------------------------------
+6. HELP IMPROVE NEXAKORD
+------------------------------------------------------------
+I am actively looking to build a community around NexaKord and form a team of testers and developers.
+
+TESTERS
+Try NexaKord with different game controllers, connection types, Windows systems, and music software. Report what works and what does not. Clear reproduction steps are more useful than simply saying something is broken.
+
+DEVELOPERS
+If you work with C#, Windows Forms, controller input, MIDI, music software, or firmware/embedded systems, I would love to hear from you. Contributions, code reviews, testing tools, documentation improvements, and thoughtful feature discussions are welcome.
+
+MUSICIANS & PRODUCERS
+Help evaluate the feel of the instrument. Tell me what makes playing intuitive, what interrupts a performance, and what would make NexaKord more useful in a real session.
+
+WHEN REPORTING A BUG, INCLUDE
+- NexaKord version
+- Windows version
+- Controller make/model
+- USB or Bluetooth connection
+- DAW and version, if relevant
+- Steps to reproduce the issue
+- What you expected and what happened
+- Relevant build-log.txt or crash log details
+
+Before sharing logs, remove usernames, file paths, or other personal information you do not want public.
+
+------------------------------------------------------------
+7. THE BIGGER VISION: FM-1
+------------------------------------------------------------
+NexaKord is the beginning of a wider idea.
+
+The long-term goal is to research and build FM-1: a future firmware/software platform intended to support NexaKord and potentially other musical applications. The ambition is to create a reusable foundation for musical control, rather than limiting the idea to one program.
+
+FM-1 is a planned direction, not a feature included in this release. Its technical design, hardware requirements, protocols, compatibility, and development plan still need to be explored. People with firmware, embedded, MIDI, hardware, and music-software experience are especially welcome to join that conversation.
+
+------------------------------------------------------------
+8. TROUBLESHOOTING
+------------------------------------------------------------
+CONTROLLER NOT DETECTED
+- Check the controller dropdown.
+- Reconnect or re-pair the controller.
+- Use Scan, then press Test.
+
+NO MIDI IN YOUR DAW
+- Confirm loopMIDI is installed and running.
+- Confirm the port is named NexaKord.
+- Enable that input in your DAW's MIDI settings.
+
+BUILD ERROR
+- Confirm you extracted the entire ZIP.
+- Do not rename or move project files.
+- Read build-log.txt.
+
+APPLICATION CRASH
+- Check:
+  %APPDATA%\NexaKord\crash.txt
+
+UNINSTALL
+Run UNINSTALL.bat from the project folder. It removes the program and shortcuts. It asks separately whether you also want to delete your profiles and settings.
+
+------------------------------------------------------------
+THANK YOU
+------------------------------------------------------------
+NexaKord is a work in progress, and real-world feedback is how it gets better. If you find a bug, have an idea, want to test a controller, or want to help develop the next stage, reach out through the project's repository issues/discussions or the maintainer's published contact details.
+
+Let's build something musical together.
+
+Caleb France
+Canexa Studios
